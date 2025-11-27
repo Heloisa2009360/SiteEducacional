@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afesu Morro Velho</title>
+</head>
+<body>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        :root {
+            --cor1: #ff6b35;   /* laranja */
+            --cor2: #ff3b65;   /* rosa forte */
+            --cor3: #d7263d;   /* vermelho */
+        }
+
+        body {
+            background-color: var(--bs-body-bg);
+        }
+
+        header {
+            background: linear-gradient(90deg, var(--cor1), var(--cor2), var(--cor3));
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .card img {
+            height: 180px;
+            object-fit: cover;
+        }
+
+        footer {
+            background: var(--cor3);
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+
+<!-- =======================
+        HEADER / MENU
+======================== -->
+<header class="py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h2 class="text-white m-0">Morro Velho</h2>
+
+        <nav>
+            <a class="nav-link d-inline-block" href="#cursos">Cursos</a>
+            <a class="nav-link d-inline-block" href="#quem-somos">Quem Somos</a>
+            <a class="nav-link d-inline-block" href="#contato">Contato</a>
+        </nav>
+
+        <!-- Theme Switcher -->
+        <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                Tema
+            </button>
+            <ul class="dropdown-menu">
+                <li><button class="dropdown-item" data-theme="light">Light</button></li>
+                <li><button class="dropdown-item" data-theme="dark">Dark</button></li>
+                <li><button class="dropdown-item" data-theme="auto">Auto</button></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- =======================
+        CARROSSEL
+======================== -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="imagem/Afesu Morro Velho.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="imagem/Afesu Morro Velho 1.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="imagem/Afesu Morro Velho 2.jpg" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="imagem/Afesu Morro Velho 3.jpg" class="d-block w-100">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- =======================
+        CURSOS (5 Cartões)
+======================== -->
+<section id="cursos" class="container py-5">
+    <h2 class="text-center mb-4">Cursos Disponíveis</h2>
+
+    <div class="row g-4">
+
+        <!-- 1 -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card shadow">
+                <img src="imagem/operador de microcomputador.webp" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Operador de Microcomputador</h5>
+                    <p class="card-text">Conhecimentos essenciais para operação de computadores.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card shadow">
+                <img src="imagem/Microsoft-Power-BI-Symbol.png" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Power BI</h5>
+                    <p class="card-text">Aprenda a criar dashboards e análises visuais.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card shadow">
+                <img src="imagem/Implantação de Redes Locais.jpg" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Implantação de Redes Locais</h5>
+                    <p class="card-text">Montagem, configuração e administração de redes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card shadow">
+                <img src="imagem/Designer de Interface Web.png" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Designer de Interface Web </h5>
+                    <p class="card-text">Design moderno e responsivo para sites e apps.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card shadow">
+                <img src="imagem/Bootstrap-img.png" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Curso de Bootstrap</h5>
+                    <p class="card-text">Aprenda a criar interfaces rápidas e responsivas.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- =======================
+        QUEM SOMOS
+======================== -->
+<section id="quem-somos" class="py-5" style="background:#ffe9e6">
+    <div class="container">
+        <h2 class="text-center mb-4">Quem Somos</h2>
+        <p class="lead text-center">
+            O projeto educacional <strong>Morro Velho</strong> tem como missão democratizar o acesso ao ensino
+            profissionalizante, oferecendo cursos de tecnologia, informática e desenvolvimento web
+            para todas as idades. Trabalhamos com educação moderna, metodologia prática e foco
+            no mercado de trabalho.
+        </p>
+    </div>
+</section>
+
+<!-- =======================
+        FOOTER
+======================== -->
+<footer id="contato" class="text-white py-4">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <h5>Morro Velho</h5>
+                <p>Educação técnica e profissional para o futuro.</p>
+                <p><strong>CNPJ:</strong> 00.000.000/0001-00</p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Contato</h5>
+                <p><a href="tel:+5531999999999">📞 (31) 99999-9999</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h5>Redes Sociais</h5>
+                <a href="#" class="d-block">Instagram</a>
+                <a href="#" class="d-block">Facebook</a>
+                <a href="#" class="d-block">YouTube</a>
+            </div>
+
+        </div>
+
+        <p class="text-center mt-3">© 2025 Morro Velho – Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS + Script do Tema -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const root = document.documentElement;
+
+    document.querySelectorAll("[data-theme]").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const theme = btn.getAttribute("data-theme");
+            if (theme === "auto") {
+                document.documentElement.setAttribute("data-bs-theme",
+                    window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
+                );
+            } else {
+                document.documentElement.setAttribute("data-bs-theme", theme);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
